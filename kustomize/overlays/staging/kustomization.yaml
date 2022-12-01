@@ -1,0 +1,8 @@
+# kustomization.yaml contents
+commonLabels:
+  environment: staging
+namespace: staging
+resources:
+  - ../../base
+  - namespace.yaml
+nameSuffix: -staging

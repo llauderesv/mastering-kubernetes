@@ -1,0 +1,8 @@
+# kustomization.yaml contents
+commonLabels:
+  environment: production
+namespace: production
+resources:
+  - ../../base
+  - namespace.yaml
+nameSuffix: -prod

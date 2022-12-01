@@ -1,0 +1,16 @@
+apiVersion: v1
+kind: Service
+metadata:
+  labels:
+    run: advanced-aks
+  name: advanced-aks
+spec:
+  ports:
+    - port: 3000
+      protocol: TCP
+      targetPort: 3000
+  selector:
+    run: advanced-aks
+  type: LoadBalancer
+status:
+  loadBalancer: {}

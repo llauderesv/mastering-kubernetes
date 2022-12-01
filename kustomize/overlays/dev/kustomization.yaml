@@ -1,0 +1,8 @@
+# kustomization.yaml contents
+commonLabels:
+  environment: development
+namespace: development
+resources:
+  - ../../base
+  - namespace.yaml
+nameSuffix: -dev
